@@ -17,6 +17,8 @@ challenges, solutions
 
 
 ### Contributors
-: David VALDEZ
-: Piero 
-: Esra
+David VALDEZ
+
+Piero 
+
+Esra
