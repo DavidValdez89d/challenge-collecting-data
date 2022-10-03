@@ -44,7 +44,7 @@ def get_page_links(url):
 def main():
     all_urls = list()
     property_type = ['house', 'apartment']
-    for x in range(1,4):
+    for x in range(1,2):
         for type in property_type:
             urls = get_page_links(f'https://www.immoweb.be/en/search/{type}/for-sale?countries=BE&page={x}&orderBy=relevance')
         
@@ -52,7 +52,7 @@ def main():
             if url not in all_urls:
                 all_urls.append(url)  
 
-       
+    print(len(all_urls))  
     with open('url_data_seperated.json','w') as fd:
         json.dump(all_urls, fd)
     print("JSON file saved.")    
